@@ -8,6 +8,16 @@
 	<!-- Dynamic styles created by less -->
 	<link type="text/css" rel="stylesheet" href="/css/dynamic/common.css" />
 
+	<!-- Socket.io  -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+		var socket = io.connect();
+		socket.on('test', function(data){
+			$('#testResult').html(data);
+		});
+		socket.emit('test');
+	</script>
+
   </head>
   <body>
 		{{{body}}}

@@ -1,6 +1,15 @@
-!!!
+doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/css/style.css')
-  body!= body
+	head
+		title= title
+		link(rel='stylesheet', href='/css/style.css')
+	// Socket.io
+	script(src="/socket.io/socket.io.js", type="text/javascript")
+	script(type="text/javascript")
+		var socket = io.connect();
+		socket.on('test', function(data){
+			document.getElementById('testResult').innerHtml(data);
+		});
+		socket.emit('test');
+	// end Socket.io
+	body!= body

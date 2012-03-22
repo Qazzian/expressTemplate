@@ -4,9 +4,12 @@
  */
 
 exports.index = function(req, res){
-	console.log('Get index.html');
+	console.log('Get index');
+	var template = 'mustache';
+	
 	try {
-		res.render('index', {title: 'Express Template', page: req.params.page, layout: 'layout'});
+		if (req.params.page === 'jade') { template = 'jade'; }
+		res.render('index.'+template, {title: 'Express Template', page: req.params.page, layout: 'layout'});
 	}
 	catch (e) {
 		console.log('ERROR: ' + e);
