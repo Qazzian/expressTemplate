@@ -9,7 +9,7 @@ exports.index = function(req, res){
 	
 	try {
 		if (req.params.page === 'jade') { template = 'jade'; }
-		res.render('index.'+template, {title: 'Express Template', page: req.params.page, layout: 'layout'});
+		res.render('index.'+template, {title: 'Express Template', page: req.params.page, layout: 'layouts/layout'});
 	}
 	catch (e) {
 		console.log('ERROR: ' + e);
