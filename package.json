@@ -8,6 +8,7 @@
 		"jade": ">= 0.0.1",
 		"less": "latest",
 		"mustache": "latest",
+		"mysql": "latest",
 		"socket.io": "latest",
 		"underscore": "latest"
 	},
