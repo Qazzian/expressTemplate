@@ -1,4 +1,4 @@
-=Express Template
+# Express Template
 
 A simple template for the average node website.
 Includes express, backbone, jquery, underscore and mysql libraries with examples.
