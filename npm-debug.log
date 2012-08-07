@@ -1,0 +1,40 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'test' ]
+info using npm@1.1.1
+info using node@v0.6.11
+verbose config file /Users/IanWallis/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/IanWallis/Sites/js/expressTemplate/package.json
+verbose loadDefaults application-name@0.0.1
+verbose run-script [ 'pretest', 'test', 'posttest' ]
+info pretest application-name@0.0.1
+info test application-name@0.0.1
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "mocha -u tdd"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'mocha -u tdd' ],
+silly spawning   '/Users/IanWallis/Sites/js/expressTemplate' ]
+info application-name@0.0.1 Failed to exec test script
+ERR! application-name@0.0.1 test: `mocha -u tdd`
+ERR! `sh "-c" "mocha -u tdd"` failed with 1
+ERR! 
+ERR! Failed at the application-name@0.0.1 test script.
+ERR! This is most likely a problem with the application-name package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     mocha -u tdd
+ERR! You can get their info via:
+ERR!     npm owner ls application-name
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "test"
+ERR! cwd /Users/IanWallis/Sites/js/expressTemplate
+ERR! node -v v0.6.11
+ERR! npm -v 1.1.1
+ERR! code ELIFECYCLE
+ERR! message application-name@0.0.1 test: `mocha -u tdd`
+ERR! message `sh "-c" "mocha -u tdd"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
