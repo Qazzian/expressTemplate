@@ -4,7 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"backbone": "latest",
-		"express": "2.5.8",
+		"express": "4.17.1",
 		"jade": ">= 0.0.1",
 		"less": "latest",
 		"mustache": "latest",
